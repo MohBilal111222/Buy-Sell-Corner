@@ -1,5 +1,203 @@
 *{
-    margin: auto;
+    margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+
+}
+
+
+/* login and register css  */
+
+.head{
+    background-color: rgb(2, 86, 255);
+    padding: 15px 25px;
+}
+
+#loginForm , #registerForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgb(255, 247, 237);
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#email , #first-name , #last-name , #password{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    outline: none;
+}
+
+#choose-file{
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+::-webkit-file-upload-button{
+    background-color: rgb(2, 86, 255);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+.register-link{
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(2, 86, 255);
+}
+
+/* login button  */
+.btn{
+    width: 30%;
+    padding: 8px 15px;
+    background-color: rgb(2, 86, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+@media(max-width:525px){
+    #loginForm{
+        width: 100%;
+    }
+    #registerForm{
+        width: 100%;
+    }
+}
+
+@media(max-width:330px){
+    #email, #password{
+        width: 100%;
+    }
+    #first-name, #last-name{
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+    }
+    #choose-file{
+        width: 100%;
+    }
+
+}
+
+
+/* login and register css end  */
+
+
+
+/* post add css  */
+
+#navbar-post-ad{
+    background-color:rgb(2, 86, 255);
+}
+
+/* post img  */
+
+.post-ad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(2, 86, 255);
+    padding: 30px 0px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.text-get{
+    margin-top: 30px;
+    background-color: white;
+}
+.fileInp{
+    display: none;
+}
+label{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 130px;
+    background-color:rgb(2, 86, 255);
+    padding-bottom: 30px;
+    border-radius: 30px;
+    border: 10px solid white;
+}
+.heading-img-upload{
+    margin-top: 5px;
+    color: white;
+}
+
+/* post title  */
+
+.text-post-add{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 10px;
+    width: 61%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.product-title, .product-description, .rs-price, .post-number, .post-name{
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+.Post-now-btn{
+    padding: 10px 15px;
+    background-color: rgb(2, 86, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 0%;
+}
+
+
+/* index section styling  */
+
+#index-section{
+    background-color: rgb(255, 247, 237);
+    padding: 20px;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cards-index{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px 100px;
 }
